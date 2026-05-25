@@ -1,0 +1,192 @@
+{
+  "format_version": "1.0",
+  "provider_schemas": {
+    "registry.terraform.io/google/google": {
+      "provider": {
+        "version": 0,
+        "attributes": {},
+        "block_types": {}
+      },
+      "resource_schemas": {
+        "google_compute_network": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "auto_create_subnetworks": {
+              "type": "bool",
+              "optional": true,
+              "description": ""
+            },
+            "description": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "google_compute_subnetwork": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "network": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "ip_cidr_range": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "region": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "google_container_cluster": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "initial_node_count": {
+              "type": "number",
+              "optional": true,
+              "description": ""
+            },
+            "remove_default_node_pool": {
+              "type": "bool",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "google_storage_bucket": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "location": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "force_destroy": {
+              "type": "bool",
+              "optional": true,
+              "description": ""
+            },
+            "storage_class": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "google_service_account": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "account_id": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "display_name": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "description": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "google_project_iam_binding": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "project": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "role": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "members": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        }
+      },
+      "data_source_schemas": {}
+    }
+  }
+}
