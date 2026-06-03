@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "cargo_lock_sha256": "aafcb88726ad3709febd878bb26ef37e4243fb2aa430701b3267007699abb318",
+  "target_resolves": {
+    "base": {
+      "lava-google-0.1.1": {
+        "runtime_dependencies": [],
+        "build_dependencies": [],
+        "features": []
+      }
+    },
+    "targets": {
+      "aarch64-apple-darwin": {
+        "overrides": {}
+      },
+      "x86_64-apple-darwin": {
+        "overrides": {}
+      },
+      "x86_64-unknown-linux-gnu": {
+        "overrides": {}
+      },
+      "x86_64-unknown-linux-musl": {
+        "overrides": {}
+      },
+      "aarch64-unknown-linux-gnu": {
+        "overrides": {}
+      },
+      "aarch64-unknown-linux-musl": {
+        "overrides": {}
+      }
+    }
+  },
+  "per_crate": {
+    "lava-google-0.1.1": {
+      "edition": "2024",
+      "lib_target": {
+        "name": "lava_google",
+        "path": "src/lib.rs"
+      }
+    }
+  },
+  "git_nar_sha256": {},
+  "flake_metadata": {}
+}
